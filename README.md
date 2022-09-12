@@ -30,6 +30,9 @@ password:
 sudo docker run --name build-env -v SOURCE_LOCATION:/usr/src/app/git -it scriptrdotio/scriptr-project-building-env bash
 Note: SOURCE_LOCATION is the location of the source code that needs to be built. In the final environment, this source code will be available under a "git" folder, directly next to the build script. modify either the Dockerfile COPY command or the -v startup option if these aren't your settings
 
+#### start new container on windows
+Note that on windows, you will need to use forward-slash (/) instead of backslash (\) when specifying path, eg. c:/users/username/sourcefolder
+
 ### stop container
 sudo docker stop build-env
 
