@@ -1,4 +1,4 @@
-FROM ubuntu:focal
+FROM ubuntu:jammy
 # Create app directory
 WORKDIR /usr/src/app
 RUN apt-get update
